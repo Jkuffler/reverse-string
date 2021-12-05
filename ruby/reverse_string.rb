@@ -1,10 +1,16 @@
 def reverse_string(str)
-  # type your code in here
+  split_string = str.split("")
+  reversed = []
+  string.size.times { reversed << split_string.pop }
+  reversed.join
 end
 
 if __FILE__ == $PROGRAM_NAME
   puts "Expecting: 'ih'"
   puts "=>", reverse_string('hi')
+
+  puts "Expecting: 'you only yolo once'"
+  puts "=>", reverse_string('ecno oloy ylno uoy')
 
   puts
 
@@ -15,4 +21,5 @@ if __FILE__ == $PROGRAM_NAME
 end
 
 # Please add your pseudocode to this file
+
 # And a written explanation of your solution
